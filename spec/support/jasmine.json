@@ -1,0 +1,11 @@
+{
+  "spec_files": [
+    "**/*.[sS]pec.[tj]s",
+    "!node_modules/**"
+  ],
+  "helpers": [
+    "spec/helpers/**/*.[tj]s"
+  ],
+  "stopSpecOnExpectationFailure": false,
+  "random": true
+}

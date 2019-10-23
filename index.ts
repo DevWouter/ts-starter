@@ -1,5 +1,11 @@
-function say(message: string) {
-    console.log(message);
-}
+import { Program } from "./program";
+import { Logger } from "./logger/logger";
+import { ConsoleLogWriter } from "./logger/console-log-writer";
+import { DateTimeHelper } from "./helpers/date-time-helper";
 
-say("Hello from " + __filename);
+new Program(
+    new Logger(
+        new ConsoleLogWriter(),
+        new DateTimeHelper()
+    ),
+).main();
